@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html translate="no">
+<div id="tiledBackground" class="op" ; onmouseover="begin()"></div>
+
+<head>
+  <title>outsidehotle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="/levelone/outsidehotle.css" rel="stylesheet" type="text/css" />
+  <link href="/Grid.css" rel="stylesheet" type="text/css" />
+  <link href="/Textbox/TextFormat.css" rel="stylesheet" type="text/css" />
+</head>
+
+</html>
+
+<a href="/levelone/BUSSTOP/busstop.html">
+  <button class="lobby op" type="button"> </button>
+</a>
+
+<!---<back arrow>--->
+<div style="position:absolute; left:400px; top:600px;">
+  <img onmouseover="Next(this)" class="op" border="0" src="/BackgroundImages/BackButton.png" width="470px" ;
+    height="auto" ;>
+</div>
+
+<script>
+  var move = 0;
+  function begin(x) {
+    move = 1;
+  }
+  function Next(x) {
+    if (move == 1) {
+      window.location.href = "/hotellobby/hotellobby.html";
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  window.history.forward();
+  function noBack() {
+    window.history.forward();
+  }
+</script>
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+</body>
+
+<script src="/Cookie.js"></script>
+<div id="grid" class="gallery"></div>
+<div id="InvBtn" style="position:absolute; left:1100px; top:25px;">
+  </div>
+<script src="Search.js"></script>
+<img id="w" class="o1 op" onclick="check('Seven', 'Sept', 'w')" src="/itemsImages/OutDoorTrash.png">
+<img id="Five" class = "card op" src="/itemsImages/Five.png" onclick="create('Five', 'have')" onload="removeBtn('Five')">

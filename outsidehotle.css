@@ -1,0 +1,51 @@
+html {
+  body {
+    background-color: black;
+    color: white;
+    position: relative
+  }
+
+  height: 100%;
+  width: 100%;
+}
+
+
+#tiledBackground {
+  background-image: url(/BackgroundImages/outsideofbulding.jpg);
+  background-size: 895px;
+  width: 1100px;
+  height: 670px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 160px;
+  top: 0px;
+}
+
+.lobby {
+  background-color: transparent;
+  width: 50px;
+  padding: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 340px;
+  left: 850px;
+}
+
+.o1 {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  cursor: pointer;
+  top: 540px;
+  left: 170px;
+}
+
+.card{
+  width: 20px;
+  height: auto;
+  position: absolute;
+  left: 900px;
+  top: 630px;
+}
