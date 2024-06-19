@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html translate="no">
+<div id="tiledBackground"></div>
+
+<head>
+  <title> Évasion de France </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    h2 {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body onload="deleteAllCookies()">
+  <div style="position:absolute; left:300px;top:70px;font-size:100;">
+    <h2><b>Évasion de France </b>
+    </h2>
+  </div>
+  <style>
+  </style>
+
+
+  <!--<input type="submit" value="Submit">-->
+
+
+</body>
+
+
+
+</html>
+<a href="Cutscenes/Intro.html">
+  <button class="ID" type="button"> Commencer </button>
+</a>
+<!--<start button>-->
+
+
+
+<button class="test" onclick="javascript:window.close()">
+  sortie </button>
+
+<p id="Exit"></p>
+
+<script>
+  function myFunction() {
+    document.getElementById("Exit").innerHTML = "";
+
+  }
+  function deleteAllCookies() {
+    var c = document.cookie.split("; ");
+    for (i in c){
+      document.cookie = /^[^=]+/.exec(c[i])[0] + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+  }
+  window.onload = function(){
+    this.name = "";
+    deleteAllCookies();
+  }
+</script>
+<script type="text/javascript">
+  window.history.forward();
+  function noBack() {
+    window.history.forward();
+  }
+</script>
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+</body>
